@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", initail-scale=1.0">
+    <title> ALL PRODUCTS - XENDO CLOTHING - ECOMERCE WEBSITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="my clothing website/bekar logo 4.png">
+    <link rel="stylesheet" href="my project.css">
+    <script src="https://kit.fontawesome.com/4320b39aed.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="home page.html"><img src="my clothing website/bekar logo 4.png" width="100px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="home page.html" class="hover-line">Home</a></li>
+                    <li><a href="products page.html" class="hover-line">Products</a></li>
+                    <li><a href="login page.html" class="hover-line">Login</a></li>
+                    <li><a href="Account.html" class="hover-line">Register</a></li>
+                </ul>
+            </nav>
+            <a href="Cart.Html"><img src="my clothing website/bag.png" width="30px" height="30px"></a>
+           <img src="my clothing website/menu bar.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- ------cart details-------->
+    <div class="small container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="my clothing website/shirt 4.jpg.png">
+                    </div>
+                    <div>
+                        <p>Shirt And Touser Set Of Two</p>
+                        <small>Price:PKR 1,200</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>PKR 1,200</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="my clothing website/watch 1.png">
+                    </div>
+                    <div>
+                        <p>Apple Watch Series 3</p>
+                        <small>Price:PKR 17,170</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>PKR 17,170</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="my clothing website/shoes 3.png">
+                    </div>
+                    <div>
+                        <p>Red Air Jordan Sneakers</p>
+                        <small>Price:PKR 6,500</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>PKR 6,500</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>PKR 24,870</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>PKR 3,233.1</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>PKR 28,103.1</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+     <!-- ------footer----- -->
+     <div class="footer">
+         <div class="container">
+             <div class="row">
+                 <div class="footer-col-1">
+                     <h3>Dowlond Our App</h3>
+                     <p>Dowlond Our app For your Andriod Or IOS Mobile Phone</p>
+                     <div class="app-logo">
+                         <img src="my clothing website/google play.png">
+                         <img src="my clothing website/app store.png">
+                     </div>
+                 </div>
+                 <div class="footer-col-2">
+                    <img src="my clothing website/bekar logo 3.png" >
+                    <p>Our Propose is to Provide You The Best Quality</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                   <ul>
+                       <li><a>Coupons</a></li>
+                       <li><a>Blog Post</a></li>
+                       <li><a>Return Policy</a></li>
+                       <li><a>join Affiliate</a></li>
+                   </ul>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Our Social Media</h3>
+                   <ul>
+                       <li><a herf="https://www.facebook.com/sahilsk.valecha/friends/">Facebook</a></li>
+                       <li><a herf="https://www.instagram.com/sahilskvalecha/followers/">Instagram</a></li>
+                       <li><a herf="https://studio.youtube.com/channel/UCZ9G9U_BgBSHDPtrN0KnsaQ/editing">Youtube</a></li>
+                       <li><a herf="https://twitter.com/settings/profile">Twitter</a></li>
+                   </ul>
+                </div>
+             </div>
+             <hr>
+             <p class="copyright">Copyright 2022 - Sahil Valecha</p>
+         </div>
+     </div>
+     <!-- --------js for toggle menu--------->
+     <script>
+         var MenuItems = document.getElementById("MenuItems");
+
+         MenuItems.style.maxHeight = "0px";
+
+         function menutoggle(){
+             if( MenuItems.style.maxHeight == "0px")
+                {
+                MenuItems.style.maxHeight = "200px";
+                }
+             else
+                {
+                MenuItems.style.maxHeight = "0px";
+                }
+         }
+     </script>
+</body>
+</html>
